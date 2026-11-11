@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f7ff;
+            color: #1e293b;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #0b3d91;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #ffffff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* HOME */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #dbeafe, #93c5fd);
+        }
+
+        .home h1 {
+            font-size: 48px;
+            color: #0b3d91;
+            margin-bottom: 15px;
+        }
+
+        .home h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            max-width: 550px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: #0b3d91;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #0b3d91;
+            margin-bottom: 30px;
+        }
+
+        /* ABOUT */
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* SKILLS */
+        .skills-container,
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(37,99,235,0.2);
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #dbeafe;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+                font-size: 13px;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyPortfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <h3>Hello, Welcome to My Portfolio!</h3>
+        <h1>I'm Your Name</h1>
+        <p>
+            A passionate student who loves technology,
+            programming, and learning new things.
+            Welcome to my personal portfolio website!
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hi! I'm Your Name, a student interested in
+            Computer Systems Servicing and programming.
+            I enjoy exploring technology, developing
+            websites, and improving my computer skills.
+            My goal is to learn more and become better
+            in the field of Information Technology.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Creating website structures.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Designing beautiful websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Adding interactive features.</p>
+            </div>
+
+            <div class="card">
+                <h3>Computer Servicing</h3>
+                <p>Basic computer troubleshooting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>A simple calculator application.</p>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>My personal website using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS Activities</h3>
+                <p>My computer servicing activities and outputs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Email: yourname@gmail.com</p>
+        <p>Facebook: Your Facebook Name</p>
+        <p>Location: Philippines</p>
+
+        <a href="mailto:yourname@gmail.com" class="btn">
+            Send Me an Email
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 My Personal Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
